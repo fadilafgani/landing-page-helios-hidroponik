@@ -1,0 +1,199 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+.navbar-brand {
+  font-family: 'Hahmlet', serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/hidroponik.jpeg);
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container{
+  z-index: 1;
+  position: relative;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: black;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span{
+  font-weight: 500;
+}
+
+/* Info */
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  background-color: white;
+  padding: 30px;
+}
+
+.info-panel img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p{
+  font-size: 14px;
+  color: green;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+
+/* info home */
+.infohome {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.infohome img {
+  width: 500px;
+  height: 350px;
+}
+
+.infohome h3 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.infohome h3 span {
+  font-weight: 500;
+}
+
+.infohome p {
+  font-size: 18px;
+  color: black;
+  font-weight: 200;
+}
+
+
+/* Testi */
+.testi {
+  margin-top: 108px;
+}
+
+.testi h5{
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.testi figure img {
+  width: 100px;
+  margin: 20px 10px 10px;
+  opacity: 0.6;
+}
+
+.testi figure img.utama {
+  width: 150px;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+.testi figure h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.testi figure p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: -5px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+}
+.footer p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* For Desktop */
+@media (min-width: 992px) {
+  .navbar-brand, .nav-link {
+    color:hsl(0, 0%, 0%) !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+
+  .nav-link:hover:after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid green;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron{
+    margin-top: -75px;
+    height: 640px;
+  }
+  
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+
+  .infohome {
+    text-align: left;
+  }
+
+  .testi h5 {
+    font-size: 32px;
+  }
+}
+
